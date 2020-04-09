@@ -59,13 +59,7 @@ def turn(board)
 end
 
 def turn_count(board)
-  count = 0
-  board.map do |spot|
-    if spot == "X" || spot == "O"
-      count += 1
-    end
-  end
-  count
+  board.count {|spot| spot == "X" || spot == "O"}
 end
 
 def current_player(board)

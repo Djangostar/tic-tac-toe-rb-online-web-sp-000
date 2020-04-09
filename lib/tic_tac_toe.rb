@@ -29,4 +29,5 @@ def position_taken?(board, index)
   while board[index] == " " || board[index] == ""
     false
   end
+  true
 end
